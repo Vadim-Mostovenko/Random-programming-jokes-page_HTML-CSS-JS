@@ -4,7 +4,7 @@ body {
   background: #51bbc9;
   font-family: "Permanent Marker";
   font-size: 1.5rem;
-  padding: 10px 100px 10px 10px;
+  padding: 0 20px;
 }
 
 h1 {
@@ -57,4 +57,13 @@ button {
   width: 90px;
   border-radius: 0 0 100%;
   box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset, -25px -2px 0 0 #000 inset;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h1::before {
+    bottom: -5px;
+  }
 }
